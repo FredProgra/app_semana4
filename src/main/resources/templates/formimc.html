@@ -10,22 +10,22 @@
 <div class="card">
     <h5 class="card-header">Featured</h5>
     <div class="card-body">
-        <form>
+        <form th:action="" th:objetc="" method="post">
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="txtcl1" placeholder="primera nota">
+                <input type="number" class="form-control" id="txtcl1" placeholder="primera nota" th:field="*{cl1}">
                 <label for="txtcl1">Ingrese nota del CL1</label>
             </div>
 
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="txtcl2" placeholder="segunda nota">
+                <input type="number" class="form-control" id="txtcl2" placeholder="segunda nota" th:field="*{cl2}">
                 <label for="txtcl2">Ingrese nota del CL2</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="txtcl3" placeholder="segunda nota">
+                <input type="number" class="form-control" id="txtcl3" placeholder="segunda nota" th:field="{cl3}">
                 <label for="txtcl3">Ingrese nota del CL2</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="txtprofin" placeholder="segunda nota">
+                <input type="number" class="form-control" id="txtprofin" placeholder="segunda nota" th:field="*{profin}">
                 <label for="txtprofin">Ingrese nota del CL2</label>
             </div>
             <button type="submit" class="btn btn-outline-dark">Resultado</button>
